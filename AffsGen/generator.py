@@ -91,8 +91,8 @@ def useVoice():
         for k in range(0,num2):
             r2 = sr.Recognizer()
             with sr.Microphone() as source2:
-                audio2 = r.listen(source2)
-            inp2 = r.recognize_google(audio2)
+                audio2 = r2.listen(source2)
+            inp2 = r2.recognize_google(audio2)
             ele2 = inp2+"\n";
     
             af2.append(ele2 + ".")
